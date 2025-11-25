@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="18dp"
+    android:layout_marginBottom="18dp"
+    android:background="@drawable/grad">
+
+    <ImageView
+        android:id="@+id/image_quests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/grad"
+        android:src="@drawable/kazan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/title_quests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/aquamarine"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/image_quests" />
+
+    <TextView
+        android:id="@+id/descr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="28dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/title_quests"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bt_details" />
+
+    <TextView
+        android:id="@+id/bt_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:text="Details"
+        android:textColor="@color/aquamarine"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
